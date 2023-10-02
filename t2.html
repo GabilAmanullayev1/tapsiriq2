@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.qaz img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    margin:0 auto;
+    
+}     
+
+.qaz {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden;
+    margin: 0 auto; /* Şəkli mərkəzləşdirmək üçün margin: 0 auto; təyin edirik */
+}
+body{ background-color:rgb(255, 247, 174);
+}
+.head {
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height:150 ;}
+
+    .about {
+        text-align: left;
+        margin-left: 15%;
+
+    }
+    h2{
+        color: orangered;
+        margin-bottom: 5%;
+        font-weight: bold;
+        font-size: 30px;
+        font-family:Arial ;
+    }
+    p{font-size: 20px;
+    margin-bottom: 2cqw;
+font-family: arial ;}
+
+Bu kod nümunəsində .basliq class-ına CSS ilə stili təyin edirik. .basliq::after pseudo-elementi ilə cümlənin altına rəngli qırıq-qırıq xətt əlavə edirik. Bu xətti çəkmək üçün ::after pseudo-elementində genişlik, en və rəng təyin edirik. position: absolute; ilə xətti pozisiyası təyin edirik və bottom və left özəllikləri ilə xətti doğru konumlamağa və düzgün mövqe verməyə yardım edir.
+
+    </style>
 </head>
+
 <body>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, similique?</div>
+    <div>
+        <div class="qaz">
+            <img src="qaz.jpg" alt="şekil">
+        </div>
+        <div class="head">BLACK GOOSE BISTRO</div>
+
+        <div class="about">
+            
+            <h2>The Restaurant</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sequi.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <h2>Catering</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, repudiandae?</p>
+            <h2>Location and hours</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem, ipsum.</p>
+
+
+
+        </div>
 </body>
+
 </html>
